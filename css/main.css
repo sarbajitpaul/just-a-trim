@@ -1,0 +1,97 @@
+/*-----Global-----*/
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+.section-heading{
+  font-family: 'MTCORSVA';
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+
+/*-----Hero Section-----*/
+.hero-section{
+  background-image: linear-gradient(rgba(203, 51, 153, 0.6), rgba(203, 51, 153, 0.6)), url('../assets/background-hero.jpg');
+  background-color: rgba(203, 51, 153, 0.6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+.hero-section h2{
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.hero-section p{
+  text-align: center;
+  margin: 150px 0;
+  font-weight: 300;
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+.hero-section ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.hero-section ul li{
+  display: inline-block;
+  padding: 0 20px;
+}
+.hero-section ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
+  transition: border-bottom 0.2s;
+}
+.hero-section ul li a:hover{
+  border-bottom: 2px solid white;
+}
+.show-menu{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  display: none;
+}
+input[type=checkbox]{
+  display: none;
+}
+input[type=checkbox]:checked ~ #menu{
+  display: block;
+}
+
+
+/*-----Responsiveness-----*/
+@media screen and (max-width: 767.98px){
+  .hero-section p{
+    text-align: left;
+    margin: 0;
+    font-size: 100%;
+  }
+  .hero-section h1{
+    text-align: left;
+    margin: 0;
+    font-size: 100%;
+  }
+  .hero-section h2{
+    text-align: left;
+    margin: 0;
+    font-size: 100%;
+  }
+  .hero-section ul{
+    /*position: static;*/
+    display: none;
+  }
+  .hero-section ul li{
+    width: 100%;
+  }
+  .show-menu{
+    display: block;
+  }
+}
