@@ -14,6 +14,7 @@
   <body>
     <!-- Hero Section -->
     <div class="hero-section">
+      <div class="fixed-img"></div>
       <div class="container py-4">
         <div class="row justify-content-between">
           <div class="col-sm-auto"><h1 class="cursive-font">Just A Trim</h1></div>
@@ -25,11 +26,11 @@
         <label for="show-menu" id="show-menu-label" onclick="changeLabelText()">Show Menu</label>
         <input type="checkbox" id="show-menu" role="button">
         <ul class="text-center" id="menu">
-          <li><a href="#">OFFERS</a></li>
-          <li><a href="#">SERVICES</a></li>
-          <li><a href="#">GALLERY</a></li>
-          <li><a href="#">LOCATION</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#offers-hyperlink">OFFERS</a></li>
+          <li><a href="#services-hyperlink">SERVICES</a></li>
+          <li><a href="#gallery-hyperlink">GALLERY</a></li>
+          <li><a href="#contacts-hyperlink">LOCATION</a></li>
+          <li><a href="#contacts-hyperlink">CONTACT</a></li>
         </ul>
       </div>
     </div>
@@ -56,134 +57,220 @@
     </div>
 
     <!-- Offers Section -->
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="#" data-target="#exampleModal" data-toggle="modal">
-            <img class="d-block w-100" src="assets/membership-card.png" alt="First slide">
-          </a>
+    <a id="offers-hyperlink">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#" data-target="#exampleModal" data-toggle="modal">
+              <img class="d-block w-100" src="assets/membership-card.png" alt="First slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#">
+              <img class="d-block w-100" src="assets/membership-card.png" alt="Second slide">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#">
+              <img class="d-block w-100" src="assets/membership-card.png" alt="Third slide">
+            </a>
+          </div>
         </div>
-        <div class="carousel-item">
-          <a href="#">
-            <img class="d-block w-100" src="assets/membership-card.png" alt="Second slide">
-          </a>
-        </div>
-        <div class="carousel-item">
-          <a href="#">
-            <img class="d-block w-100" src="assets/membership-card.png" alt="Third slide">
-          </a>
-        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+    </a>
 
     <!-- Services Section -->
-    <div class="services-section">
-      <div class="container pt-4">
-        <div class="row justify-content-center">
-          <div class="col-0">
-            <h1 class="cursive-font">Services</h1>
-          </div>
-        </div>
-        <div class="row justify-content-between">
-          <div class="col-sm-auto">
-            <ul class="services-list pb-4">
-              <h4>HAIR</h4>
-              <li>
-                <p>HAIRCUTS WITH SHAMPOO<br>
-                  <i class="fas fa-male"></i>&nbsp; &#8377;150
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <i class="fas fa-female"></i>&nbsp; &#8377;300
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <i class="fas fa-child"></i>&nbsp; &#8377;100
-                </p>
-              </li>
+    <a id="services-hyperlink">
+      <div class="services-section">
+        <div class="container pt-4">
+          <h1 class="cursive-font">Services</h1>
 
-              <li>
-                <p>HAIR SPA<br>
-                  <i class="fas fa-male"></i>&nbsp; &#8377;400-700
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <i class="fas fa-female"></i>&nbsp; &#8377;900-2000
-                </p>
-              </li>
+          <p style="text-align:center"><i class="fas fa-male"></i>&nbsp; Men
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fas fa-female"></i>&nbsp; Women
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fas fa-child"></i>&nbsp; Children under 11 years
+          </p>
 
-              <li>
-                <p>STRAIGHTNING<br>
-                  <i class="fas fa-male"></i>&nbsp; &#8377;1000
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <i class="fas fa-female"></i>&nbsp; &#8377;3500
-                </p>
-              </li>
+          <div class="row justify-content-between">
+            <div class="col-sm-auto">
+              <ul class="services-list pb-4">
+                <h4>HAIR</h4>
+                <li>
+                  <p>HAIRCUT WITH SHAMPOO<br>
+                    <i class="fas fa-male"></i>&nbsp; &#8377;150
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fas fa-female"></i>&nbsp; &#8377;300
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fas fa-child"></i>&nbsp; &#8377;100
+                  </p>
+                </li>
 
-              <li>
-                <p>COLORING (HIGHLIGHT/GLOBAL)<br>
-                  <i class="fas fa-male"></i>&nbsp; &#8377;500
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <i class="fas fa-female"></i>&nbsp; &#8377;1000
-                </p>
-              </li>
+                <li>
+                  <p>HAIR SPA<br>
+                    <i class="fas fa-male"></i>&nbsp; &#8377;400-700
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fas fa-female"></i>&nbsp; &#8377;900-2000
+                  </p>
+                </li>
 
-              <li>
-                <p>TREATMENT THERAPY<br>
-                  <i class="fas fa-male"></i>
-                  &nbsp;
-                  <i class="fas fa-female"></i>&nbsp; &#8377;600-3000
-                </p>
-              </li>
-            </ul>
-          </div>
+                <li>
+                  <p>STRAIGHTNING<br>
+                    <i class="fas fa-male"></i>&nbsp; &#8377;1000
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fas fa-female"></i>&nbsp; &#8377;3500
+                  </p>
+                </li>
 
-          <div class="col-sm-auto">
-            <ul class="services-list pb-4">
-              <h4>SKIN AND FACE</h4>
-              <li>
-                <p>FACIALS<br>
-                  <i class="fas fa-male"></i>
-                  &nbsp;
-                  <i class="fas fa-female"></i>&nbsp; &#8377;600-1500
-                </p>
-              </li>
+                <li>
+                  <p>COLORING (HIGHLIGHT/GLOBAL)<br>
+                    <i class="fas fa-male"></i>&nbsp; &#8377;500
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fas fa-female"></i>&nbsp; &#8377;1000
+                  </p>
+                </li>
 
-              <li>
-                <p>WAXING<br>
-                  <i class="fas fa-female"></i>&nbsp; &#8377;100-1500
-                </p>
-              </li>
+                <li>
+                  <p>TREATMENT THERAPY<br>
+                    <i class="fas fa-male"></i>
+                    &nbsp;
+                    <i class="fas fa-female"></i>&nbsp; &#8377;600-3000
+                  </p>
+                </li>
+              </ul>
+            </div>
 
-              <li>
-                <p>MANICURE<br>
-                  <i class="fas fa-female"></i>&nbsp; &#8377;400
-                </p>
-              </li>
+            <div class="col-sm-auto">
+              <ul class="services-list pb-4">
+                <h4>SKIN AND FACE</h4>
+                <li>
+                  <p>FACIALS<br>
+                    <i class="fas fa-male"></i>
+                    &nbsp;
+                    <i class="fas fa-female"></i>&nbsp; &#8377;600-1500
+                  </p>
+                </li>
 
-              <li>
-                <p>PEDICURE<br>
-                  <i class="fas fa-female"></i>&nbsp; &#8377;400-1000
-                </p>
-              </li>
+                <li>
+                  <p>WAXING<br>
+                    <i class="fas fa-female"></i>&nbsp; &#8377;100-1500
+                  </p>
+                </li>
 
-              <li>
-                <p>SHAVING WITH CLEANSING<br>
-                  <i class="fas fa-male"></i>&nbsp; &#8377;60
-                </p>
-              </li>
-            </ul>
+                <li>
+                  <p>MANICURE<br>
+                    <i class="fas fa-female"></i>&nbsp; &#8377;400
+                  </p>
+                </li>
+
+                <li>
+                  <p>PEDICURE<br>
+                    <i class="fas fa-female"></i>&nbsp; &#8377;400-1000
+                  </p>
+                </li>
+
+                <li>
+                  <p>SHAVING WITH CLEANSING<br>
+                    <i class="fas fa-male"></i>&nbsp; &#8377;60
+                  </p>
+                </li>
+
+                <li>
+                  <p>THREADING<br>
+                    <i class="fas fa-male"></i>
+                    &nbsp;
+                    <i class="fas fa-female"></i>&nbsp; &#8377;25-100
+                  </p>
+                </li>
+
+                <li>
+                  <p>TATTOO<br>
+                    <i class="fas fa-male"></i>
+                    &nbsp;
+                    <i class="fas fa-female"></i>&nbsp; &#8377;1000
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </a>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- Gallery Section -->
+    <a id="gallery-hyperlink">
+      <div class="gallery-section">
+        <div class="container py-4">
+          <h1 class="cursive-font">Gallery</h1>
+        </div>
+      </div>
+    </a>
+
+    <!-- Contacts Section -->
+    <a id="contacts-hyperlink">
+      <div class="contacts-section">
+        <div class="container py-4">
+          <h1 class="cursive-font">Contact Us</h1>
+
+          <div class="row justify-content-between">
+            <div class="col-sm-auto">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div id="map"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-auto">
+              <p>OPENING HOURS</p>
+              <table>
+                <tr>
+                  <td>SUNDAY</td>
+                  <td>10AM-9PM</td>
+                </tr>
+                <tr>
+                  <td>MONDAY</td>
+                  <td>10AM-9PM</td>
+                </tr>
+                <tr>
+                  <td>TUESDAY</td>
+                  <td>10AM-9PM</td>
+                </tr>
+                <tr>
+                  <td>WEDNESDAY&nbsp;&nbsp;</td>
+                  <td>10AM-9PM</td>
+                </tr>
+                <tr>
+                  <td>THURSDAY</td>
+                  <td>10AM-9PM</td>
+                </tr>
+                <tr>
+                  <td>FRIDAY</td>
+                  <td>10AM-9PM</td>
+                </tr>
+                <tr>
+                  <td>SATURDAY</td>
+                  <td>10AM-9PM</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuF_cs4tGWEZCFC85xuRu9cd0PQ0LkgLU&callback=initMap"></script>
     <script src="js/main.js" charset="utf-8"></script>
   </body>
 </html>

@@ -10,3 +10,29 @@ $(document).ready(function(){
     }
   });
 });
+
+
+
+function initMap(){
+  var justATrimLocation = {lat: 22.698514, lng: 88.375165};
+
+  var options = {
+    zoom: 15,
+    center: justATrimLocation
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), options);
+
+  var marker = new google.maps.Marker({
+    position: justATrimLocation,
+    map: map
+  });
+
+  var infoWindow = new google.maps.InfoWindow({
+    content: '<p>Just A Trim</p>'
+  });
+
+  marker.addListener('click', function() {
+    infoWindow.open(map, marker);
+  });
+}
