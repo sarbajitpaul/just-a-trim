@@ -9,9 +9,6 @@ body{
   letter-spacing: 1px;
   text-align: center;
 }
-.fas{
-  font-size: 20px;
-}
 
 
 
@@ -94,7 +91,9 @@ input[type=checkbox]:checked ~ #menu{
 .services-list li p{
   font-weight: 700;
 }
-
+.services-section .fas{
+  font-size: 20px;
+}
 
 
 
@@ -119,11 +118,35 @@ input[type=checkbox]:checked ~ #menu{
   background-color: white;
   color: black;
 }
+#map p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+}
 .contacts-section p{
   margin: 0;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
+}
+#address{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+
+
+
+
+/*-----Copyright Section-----*/
+.copyright-section{
+  background-color: #a3297a;
+}
+.copyright-section p{
+  margin: 20px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 

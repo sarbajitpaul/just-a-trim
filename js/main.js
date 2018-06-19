@@ -29,10 +29,16 @@ function initMap(){
   });
 
   var infoWindow = new google.maps.InfoWindow({
-    content: '<p>Just A Trim</p>'
+    content: '<h4>Just A Trim</h4><p>42, RABINDRANATH TAGORE ROAD,<br>SWADESHI MORE, SODEPUR,<br>KOLKATA - 700114</p>'
   });
 
   marker.addListener('click', function() {
     infoWindow.open(map, marker);
   });
 }
+
+
+
+
+var d = new Date();
+document.getElementById('year').innerHTML = d.getFullYear();

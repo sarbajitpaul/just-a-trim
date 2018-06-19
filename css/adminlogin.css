@@ -1,0 +1,17 @@
+body, html{
+  height: 100%;
+  background-color: #3d3b3b;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.card{
+  color: #3d3b3b;
+}
+#error-msg{
+  color: red;
+  display: block;
+}
