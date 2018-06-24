@@ -2,6 +2,7 @@
 body{
   font-family: 'Montserrat', sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 .cursive-font{
   font-family: 'MTCORSVA';
@@ -78,6 +79,15 @@ input[type=checkbox]:checked ~ #menu{
 
 
 
+/*-----Offers Section-----*/
+#offerModal{
+  color: black;
+}
+
+
+
+
+
 /*-----Services Section-----*/
 .services-section{
   width: 100%;
@@ -102,6 +112,16 @@ input[type=checkbox]:checked ~ #menu{
 .gallery-section{
   color: #3d3b3b;
   background-color: white;
+}
+.scrolling-wrapper{
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.gallery-card{
+  display: inline-block;
+  padding: 0 1%;
 }
 
 
