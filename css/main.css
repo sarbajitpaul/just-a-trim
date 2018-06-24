@@ -83,6 +83,11 @@ input[type=checkbox]:checked ~ #menu{
 #offerModal{
   color: black;
 }
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  border: 10px solid white;
+  border-radius: 200%;
+  padding: 20px;
+}
 
 
 
@@ -223,5 +228,10 @@ input[type=checkbox]:checked ~ #menu{
   #show-menu-label{
     display: block;
     margin: 0;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon{
+    border: 4px solid white;
+    border-radius: 200%;
+    padding: 5px;
   }
 }
